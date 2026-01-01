@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Organizador de Estudos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📚 Organizador de Estudos</h1>
+
+    <div class="form">
+      <input type="text" id="taskInput" placeholder="Nova tarefa">
+      
+      <select id="category">
+
+  <optgroup label="📘 Ensino Médio">
+    <option value="Português">Português</option>
+    <option value="Matemática">Matemática</option>
+    <option value="História">História</option>
+    <option value="Geografia">Geografia</option>
+    <option value="Física">Física</option>
+    <option value="Química">Química</option>
+    <option value="Biologia">Biologia</option>
+    <option value="Inglês">Inglês</option>
+    <option value="Educação Física">Educação Física</option>
+    <option value="Filosofia">Filosofia</option>
+    <option value="Sociologia">Sociologia</option>
+    <option value="Artes">Artes</option>
+     <option value="Outros">Outros</option>
+  </optgroup>
+
+  <optgroup label="🎯 ENEM">
+    <option value="ENEM - Linguagens">ENEM – Linguagens</option>
+    <option value="ENEM - Matemática">ENEM – Matemática</option>
+    <option value="ENEM - Ciências Humanas">ENEM – Ciências Humanas</option>
+    <option value="ENEM - Ciências da Natureza">ENEM – Ciências da Natureza</option>
+    <option value="ENEM - Redação">ENEM – Redação</option>
+     <option value="Outros">Outros</option>
+  </optgroup>
+
+  <optgroup label="🏛️ Vestibular">
+    <option value="Vestibular - Matemática">Vestibular – Matemática</option>
+    <option value="Vestibular - Português">Vestibular – Português</option>
+    <option value="Vestibular - Redação">Vestibular – Redação</option>
+    <option value="Vestibular - Conhecimentos Gerais">Vestibular – Conhecimentos Gerais</option>
+     <option value="Outros">Outros</option>
+  </optgroup>
+
+  <optgroup label="🎓 Faculdade">
+    <option value="Cálculo">Cálculo</option>
+    <option value="Álgebra Linear">Álgebra Linear</option>
+    <option value="Matemática Discreta">Matemática Discreta</option>
+    <option value="Programação">Programação</option>
+    <option value="Estruturas de Dados">Estruturas de Dados</option>
+    <option value="Banco de Dados">Banco de Dados</option>
+    <option value="Física Geral">Física Geral</option>
+    <option value="Química Geral">Química Geral</option>
+    <option value="Outros">Outros</option>
+  </optgroup>
+
+</select>
+
+      <input type="date" id="dateInput">
+
+      <button id="addTask">Adicionar</button>
+    </div>
+
+    <div class="filters">
+      <button onclick="setFilter('all')">Todas</button>
+      <button onclick="setFilter('pending')">Pendentes</button>
+      <button onclick="setFilter('done')">Concluídas</button>
+    </div>
+
+    <p id="progress"></p>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
